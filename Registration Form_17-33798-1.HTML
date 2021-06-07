@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <form action="/">
+            <fieldset>
+                <legend>Basic Information:</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname">
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <br><br>
+                <label for="religion">Religion:</label>
+                <select name="religion" id="religion">
+                    <option value="Islam">Islam</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Cristan">Cristan</option>
+                    <option value="Buddhism">Buddhism</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information:</legend>
+                <label for="address">Present Address:</label>
+                <br>
+                <textarea name="address" id="address" cols="40" rows="3"></textarea>
+                <br>
+                <label for="paddress">Parmanent Address:</label>
+                <br>
+                <textarea name="paddress" id="paddress" cols="40" rows="3"></textarea>
+                <br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phon" placeholder="78945-789456" pattern="[0-9]{5}-[0-9]{6}">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label for="link">Personal Website Link(url):</label>
+                <input type="url" name="link" id="link">
+                <br>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
